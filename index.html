@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Skand Verma</title>
-<meta name="description" content="Skand Verma: robotics, drones, GNSS-denied navigation, computer vision and generative AI.">
+<meta name="description" content="Skand Verma, Computer Vision Engineer: visual-inertial odometry, SLAM, object detection and real-time ML for autonomous drones and robots.">
 <style>
 :root{--bg:#0b0d10;--panel:#13171c;--line:#232a32;--text:#e6e9ee;--muted:#8b95a3;--accent:#4fd1a5;--accent2:#6aa8ff;--chip:#1a2027}
 :root[data-theme="light"]{--bg:#f6f7f9;--panel:#fff;--line:#e2e6ea;--text:#14181d;--muted:#5d6773;--accent:#0f9d74;--accent2:#2d6fd6;--chip:#eef1f4}
@@ -55,6 +55,11 @@ pre{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding
 .skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
 .skills div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
 .skills h4{margin:0 0 6px}.skills p{margin:0;color:var(--muted);font-size:14px}
+.tl{border-left:2px solid var(--line);padding-left:20px;display:grid;gap:24px}
+.job{position:relative}
+.tl .job::before{content:"";position:absolute;left:-27px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.job h3{margin:2px 0 0;font-size:18px}.job .when{font-size:13px;color:var(--accent)}.job .org{color:var(--muted);font-size:15px}
+.job ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:15px}
 footer{padding:40px 0;color:var(--muted);border-top:1px solid var(--line);font-size:14px}
 @media (max-width:600px){nav .links a:not(:last-child){display:none}header{padding:48px 0 32px}}
 </style>
@@ -62,20 +67,43 @@ footer{padding:40px 0;color:var(--muted);border-top:1px solid var(--line);font-s
 <body>
 <nav><div class="wrap">
   <a class="logo" href="#">skandverma</a>
-  <div class="links"><a href="#projects">Projects</a><a href="#research">Research</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  <div class="links"><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#research">Publications</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
   <button id="theme" aria-label="Toggle theme">◐</button>
 </div></nav>
 
 <header class="wrap">
-  <h1>Skand Verma<br><span>Robotics · Drones · Vision AI</span></h1>
-  <p class="lead">Computer science student at LNCT Bhopal, working on autonomy. I build GNSS-denied visual navigation for drones, guidance laws for fixed-wing aircraft, ground-control stations, and perception for legged robots. I also co-authored a review of generative AI in metallurgical engineering.</p>
+  <h1>Skand Verma<br><span>Computer Vision Engineer</span></h1>
+  <p class="lead">Computer Vision Engineer and published author with 3 years of experience building perception systems for autonomous drones and robots. I specialize in visual-inertial odometry, object detection, SLAM and real-time ML on embedded platforms. I lead computer vision and control algorithms at Rodella Aerospace Labs, was a research associate at the University of Nevada, Reno, and graduated with a B.Tech in Computer Science from LNCT in 2026.</p>
   <div class="stats">
+    <div class="stat"><b>3 yrs</b><small>industry &amp; research</small></div>
     <div class="stat"><b id="nproj">0</b><small>projects</small></div>
-    <div class="stat"><b>1</b><small>journal paper (JAIR)</small></div>
-    <div class="stat"><b>Jetson</b><small>TX2 · Orin Nano edge AI</small></div>
-    <div class="stat"><b>ArduPilot</b><small>Copter · Plane · MAVLink</small></div>
+    <div class="stat"><b>IJMMM</b><small>Springer journal paper</small></div>
+    <div class="stat"><b>SIH 2024</b><small>winner · IIT Roorkee</small></div>
   </div>
 </header>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <div class="tl">
+    <div class="job"><div class="when">Nov 2025 – Present</div><h3>Computer Vision and Control Algorithms Head</h3><div class="org">Rodella Aerospace Labs, India</div><ul>
+      <li>Developed and field-tested a visual-inertial odometry system for drones that runs in real time on live flight data in real-world environments</li>
+      <li>Developed proportional-navigation guidance for point-to-point drone flight, with high trajectory-tracking accuracy</li>
+      <li>Tested stressed-crop detection and targeted spraying in the field</li></ul></div>
+    <div class="job"><div class="when">Jun 2025 – Sep 2025</div><h3>Computer Vision Research Associate</h3><div class="org">University of Nevada, Reno, USA</div><ul>
+      <li>Developed depth estimation for objects detected in the COCO dataset, tailored to quadruped robots</li>
+      <li>Integrated real-time SLAM and a VLM on quadrupeds, giving them autonomous navigation and better human-robot interaction</li>
+      <li>Deployed reinforcement learning with motion imitation so quadrupeds could walk over outdoor terrain</li></ul></div>
+    <div class="job"><div class="when">Feb 2024 – Jun 2025</div><h3>Computer Vision Intern</h3><div class="org">Rodella Aerospace Labs, India</div><ul>
+      <li>Engineered an occlusion-proof tracker with gimbal control that keeps the target centred automatically, and implemented a hyperspectral anomaly detection (HSI-AD) algorithm for agriculture</li>
+      <li>Developed AI aerial hazard detection for crane operations with real-time analytics, and geotagged people in high-altitude imagery for search and rescue</li>
+      <li>Architected a full-stack ground control station with GPS following and predictive routing that uses live convoy GPS</li></ul></div>
+    <div class="job"><div class="when">Apr 2023 – Dec 2023</div><h3>Drone Developer Intern</h3><div class="org">Reffto, India</div><ul>
+      <li>Implemented YOLO-based object detection for robotics</li>
+      <li>Designed and built autonomous drone prototypes for exploring unknown environments</li></ul></div>
+  </div>
+  <h2 style="margin-top:40px">Education</h2>
+  <div class="job"><div class="when">May 2022 – Jun 2026</div><h3>B.Tech, Computer Science and Engineering</h3><div class="org">Lakshmi Narain College of Technology (LNCT), Bhopal · Graduated 2026</div></div>
+</div></section>
 
 <section id="projects"><div class="wrap">
   <h2>Projects</h2>
@@ -87,24 +115,39 @@ footer{padding:40px 0;color:var(--muted);border-top:1px solid var(--line);font-s
 </div></section>
 
 <section id="research"><div class="wrap">
-  <h2>Research</h2>
+  <h2>Publications</h2>
   <article class="paper">
-    <h3>Generative Artificial Intelligence and Its Application in Metallurgical Engineering: Current Situation and Future Perspectives</h3>
-    <div class="meta">Himeshkumar Patel &amp; <b>Skand Verma</b> · <i>Journal of Artificial Intelligence Research</i> (JAIR), 2026 · Accepted, in press</div>
+    <h3><a href="https://doi.org/10.1007/s12613-026-3510-x" rel="noopener" target="_blank">Generative artificial intelligence in extractive metallurgy: Industrial applications, limitations and implementation pathways</a></h3>
+    <div class="meta">Himeshkumar A. Patel &amp; <b>Skand Verma</b> · <i>International Journal of Minerals, Metallurgy and Materials</i>, 33(7), 2313–2337, 2026 · Springer · <a href="https://doi.org/10.1007/s12613-026-3510-x" rel="noopener" target="_blank">doi:10.1007/s12613-026-3510-x</a></div>
     <p>A review of generative AI for the extractive industry. It covers five generative model families and their uses in pyrometallurgy, comminution, flotation, hydrometallurgy, ore sorting, plant digitalization, plant reliability and inverse materials design. It also separates confirmed generative-AI studies from discriminative-ML and digital-twin work. Generative AI is most useful where metallurgical data are sparse, noisy, high-dimensional or framed as inverse design. Traditional ML remains the better choice for many well-labelled tabular tasks.</p>
     <details open>
       <summary>Cite this paper</summary>
-      <p><b>APA:</b> Patel, H., &amp; Verma, S. (2026). Generative artificial intelligence and its application in metallurgical engineering: Current situation and future perspectives. <i>Journal of Artificial Intelligence Research</i>. (In press)</p>
+      <p><b>APA:</b> Patel, H. A., &amp; Verma, S. (2026). Generative artificial intelligence in extractive metallurgy: Industrial applications, limitations and implementation pathways. <i>International Journal of Minerals, Metallurgy and Materials, 33</i>(7), 2313–2337. https://doi.org/10.1007/s12613-026-3510-x</p>
 <pre id="bib">@article{patel2026genai,
-  title   = {Generative Artificial Intelligence and Its Application in Metallurgical Engineering: Current Situation and Future Perspectives},
-  author  = {Patel, Himeshkumar and Verma, Skand},
-  journal = {Journal of Artificial Intelligence Research},
+  title   = {Generative artificial intelligence in extractive metallurgy: Industrial applications, limitations and implementation pathways},
+  author  = {Patel, Himeshkumar A. and Verma, Skand},
+  journal = {International Journal of Minerals, Metallurgy and Materials},
+  volume  = {33},
+  number  = {7},
+  pages   = {2313--2337},
   year    = {2026},
-  note    = {In press}
+  doi     = {10.1007/s12613-026-3510-x}
 }</pre>
       <button class="btn" id="copy">Copy BibTeX</button>
     </details>
   </article>
+  <article class="paper" style="margin-top:16px;border-left-color:var(--accent2)">
+    <h3>Fusion-enhanced perception for autonomous exploration with a Unitree quadruped using depth and inertial sensing</h3>
+    <div class="meta">S. Lokhande &amp; <b>Skand Verma</b> · Manuscript under review</div>
+  </article>
+  <h2 style="margin-top:40px">Leadership &amp; Awards</h2>
+  <div class="skills">
+    <div><h4>🏆 Smart India Hackathon 2024</h4><p>Winner · IIT Roorkee, India</p></div>
+    <div><h4>🥈 National Innovation for Drone and Research</h4><p>Silver Winner · Jan 2026</p></div>
+    <div><h4>President, Drone Club</h4><p>AICTE Idea Lab, LNCT</p></div>
+    <div><h4>System Integration Project</h4><p>Airbornics Defense and Space Ltd.</p></div>
+    <div><h4>Quadruped IMU Data Acquisition &amp; Analysis</h4><p>Robotics project · University of Nevada, Reno</p></div>
+  </div>
 </div></section>
 
 <section id="skills"><div class="wrap">
@@ -115,12 +158,13 @@ footer{padding:40px 0;color:var(--muted);border-top:1px solid var(--line);font-s
     <div><h4>Edge AI</h4><p>NVIDIA Jetson TX2 / Orin Nano, PyTorch built from source, CUDA, GStreamer, RTSP, Radxa Zero</p></div>
     <div><h4>Languages</h4><p>Python, C++, Go, TypeScript/JavaScript, Bash</p></div>
     <div><h4>Robotics</h4><p>ROS 2, Intel RealSense, Unitree A1, SIYI gimbals, Skydroid H16</p></div>
-    <div><h4>ML &amp; Data</h4><p>Hyperspectral anomaly detection, industrial process ML, generative AI, explainable models</p></div>
+    <div><h4>ML &amp; Data</h4><p>Hyperspectral anomaly detection, depth estimation, reinforcement learning, generative AI, industrial process ML</p></div>
   </div>
 </div></section>
 
 <footer id="contact"><div class="wrap">
-  <p>Find me on <a href="https://github.com/skandvarma" rel="noopener">GitHub @skandvarma</a> · Bhopal, India</p>
+  <h2 style="color:var(--text)">Contact</h2>
+  <p><a href="mailto:skandvarma2004@gmail.com">skandvarma2004@gmail.com</a> · <a href="https://www.linkedin.com/in/skandverma" rel="noopener" target="_blank">LinkedIn</a> · <a href="https://github.com/skandvarma" rel="noopener" target="_blank">GitHub</a> · Bhopal, India</p>
   <p>© <span id="yr"></span> Skand Verma</p>
 </div></footer>
 
@@ -142,6 +186,9 @@ const P=[
  {t:"Prompted Segmentation for Drywall QA",c:"AI / ML",url:"https://github.com/skandvarma/seg-dry-crack",d:"Text-prompted segmentation that finds drywall taping areas and wall cracks.",x:["Fine-tuned CLIPSeg, prompted by text"],k:["Python","CLIPSeg","PyTorch"]},
  {t:"Hyperspectral Fire Blight Detection",c:"AI / ML",url:"https://github.com/skandvarma/Hyperspectral-Imaging",d:"Machine-learning detection of fire blight in apple trees from hyperspectral images, with 97% accuracy at early stages.",x:["97% early-stage detection accuracy","Companion project <a href='https://github.com/skandvarma/HSI-AD' rel='noopener'>HSI-AD</a>: real-time anomaly detection for apple scab, fire blight and more"],k:["Python","Hyperspectral","ML"]},
  {t:"MineMore AI",c:"AI / ML",p:true,d:"Explainable, read-only industrial intelligence for mineral processing: an ML pipeline for gold plants plus the web platform around it.",x:["Gold-plant model training, insights and reporting","TypeScript web platform with hardened auth and rate limiting"],k:["Python","TypeScript","ML"]},
+ {t:"Crop Stress Detection & Targeted Spraying",c:"AI / ML",d:"Detects stressed crops from a drone and sprays only the affected areas. Field-tested at Rodella Aerospace Labs.",x:["Aerial crop-stress detection","Spraying aimed only at the detected zones"],k:["Python","Computer Vision","Drones"]},
+ {t:"Aerial Crane Hazard Detection",c:"Vision",d:"AI aerial monitoring that detects hazards around crane operations, with real-time analytics.",x:["Real-time hazard detection and analytics dashboard"],k:["Python","YOLO","Analytics"]},
+ {t:"Quadruped RL Locomotion",c:"Robotics",d:"Reinforcement learning with motion imitation so a quadruped can walk over outdoor terrain. Done at the University of Nevada, Reno.",x:["Motion-imitation policies, fine-tuned for real terrain","Quadruped IMU data acquisition and analysis"],k:["Python","RL","PyBullet","Unitree"]},
  {t:"Cyber Soldier",c:"Web",p:true,d:"A React web app that teaches cybersecurity awareness.",x:["Built with a collaborator"],k:["React","JavaScript"]}
 ];
 const g=document.getElementById('grid'),q=document.getElementById('q'),fb=document.getElementById('filters');
